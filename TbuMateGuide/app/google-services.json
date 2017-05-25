@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1111",
+    "firebase_url": "https://www-111.firebaseio.com",
+    "project_id": "111-111",
+    "storage_bucket": "www-111.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:111:android:111",
+        "android_client_info": {
+          "package_name": "com.tbumateguide1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "111-111.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxR1WHh40-111"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

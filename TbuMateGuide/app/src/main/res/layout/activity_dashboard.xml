@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradiant"
+    tools:context="com.tbumateguide1.tbuguide.DashboardActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:alpha="0.8"
+            android:textColor="@color/tv_txt_color"
+            android:textSize="@dimen/d_t16dp"
+            android:layout_marginBottom="@dimen/d_25dp"
+            android:id="@+id/textView" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button 1"
+            android:textColor="@color/tv_txt_color"
+            android:background="@drawable/round_button"
+            android:paddingLeft="@dimen/d_20dp"
+            android:paddingRight="@dimen/d_20dp"
+            android:layout_marginBottom="@dimen/d_5dp"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button 2"
+            android:textColor="@color/tv_txt_color"
+            android:background="@drawable/round_button"
+            android:paddingLeft="@dimen/d_20dp"
+            android:paddingRight="@dimen/d_20dp"
+            android:layout_marginBottom="@dimen/d_5dp"/>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button 2"
+            android:textColor="@color/tv_txt_color"
+            android:background="@drawable/round_button"
+            android:paddingLeft="@dimen/d_20dp"
+            android:paddingRight="@dimen/d_20dp"
+            android:layout_marginBottom="@dimen/d_5dp"/>
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button 2"
+            android:textColor="@color/tv_txt_color"
+            android:background="@drawable/round_button"
+            android:paddingLeft="@dimen/d_20dp"
+            android:paddingRight="@dimen/d_20dp"
+            android:layout_marginBottom="@dimen/d_5dp"/>
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button 2"
+            android:textColor="@color/tv_txt_color"
+            android:background="@drawable/round_button"
+            android:paddingLeft="@dimen/d_20dp"
+            android:paddingRight="@dimen/d_20dp"
+            android:layout_marginBottom="@dimen/d_5dp"/>
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button 2"
+            android:textColor="@color/tv_txt_color"
+            android:background="@drawable/round_button"
+            android:paddingLeft="@dimen/d_20dp"
+            android:paddingRight="@dimen/d_20dp"
+            android:layout_marginBottom="@dimen/d_5dp"/>
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button 2"
+            android:textColor="@color/tv_txt_color"
+            android:background="@drawable/round_button"
+            android:paddingLeft="@dimen/d_20dp"
+            android:paddingRight="@dimen/d_20dp"
+            android:layout_marginBottom="@dimen/d_5dp"/>
+
+        <com.google.android.gms.ads.AdView
+            android:id="@id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:adSize="BANNER"
+            app:adUnitId="@string/app_banner_id"
+            android:layout_gravity="center|bottom"
+            android:layout_alignParentBottom="true"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
