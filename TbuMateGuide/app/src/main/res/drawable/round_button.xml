@@ -5,7 +5,7 @@
 
             <corners android:radius="50dp"/>
             <stroke android:color="@color/clrBtnStroke" android:width="2dp"/>
-            <solid android:color="@color/clrBtnBgPress"/>
+            <solid android:color="@color/clrBtnBgUnpress"/>
         </shape>
     </item>
     <item android:state_pressed="true">
@@ -13,7 +13,7 @@
 
             <corners android:radius="50dp"/>
             <stroke android:color="@color/clrBtnStroke" android:width="2dp"/>
-            <solid android:color="@color/clrBtnBgUnpress"/>
+            <solid android:color="@color/clrBtnBgPress"/>
         </shape>
     </item>
 </selector>
