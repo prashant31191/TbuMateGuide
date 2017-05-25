@@ -1,0 +1,78 @@
+1st Button: Tbu.Mate user guide
+Tbu.Mate empowers you to rapidly get to, inquiry, share, and download Videos. 
+
+Since downloading dependably occurs out of sight, you can continue watching videos, surfing the Internet, tweeting, and tuning in to your music as you download.
+
+2 Button: How to use Tbu.Mate app:
+Open the App and tap on menu tab, situated on the upper left corner.                        
+Enter the link  or else it'll suggest you couple of sites from where you need to download videos. Include URL address.                        
+Presently Browse the video you need to download and play it for some time.
+Tap the green download icon and Wait for the list of video formats options to appear, then select the video quality in which you want to download the video.
+
+3. button: check your downloads:
+Tap The "Downloaded" tab and you will find your downloaded files.
+
+4.How to Play your downloaded content
+
+Go to Downloaded Tab and simply tap on the content, or go to your local storage and you will find the downloaded videos.
+
+5.Find saved videos.
+
+You can easily find your saved videos by accessing your default media player.
+
+6. Tbu.Mate Features:
+
+* Fast download.
+
+* Multiple download resolution and format options
+
+* Resume downloading qucikly.
+
+* Convert to MP4 and Mp3 audio.
+
+* Easy playlists maker.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Tbu.mate tips
+
+bnr
+ca-app-pub-5393360390753574/1281731244
+int
+ca-app-pub-5393360390753574/2758464447
+sta
+204437760
+
+keystore
+tbumate
+
+alias
+tbumate
+
+pass
+tbumate

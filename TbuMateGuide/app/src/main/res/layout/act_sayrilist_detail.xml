@@ -110,11 +110,11 @@
                 <RelativeLayout
                     android:id="@+id/rlDetail"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:scrollbars="vertical"
                     android:layout_above="@+id/adView"
-                    android:background="#FFF"
-                    android:visibility="gone" >
+                    android:background="#5FFF"
+                    android:visibility="visible" >
                         <ScrollView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
@@ -126,10 +126,10 @@
                                         <ImageView
                                             android:id="@+id/ivImage"
                                             android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
+                                            android:layout_height="200dp"
 
                                             android:scaleType="centerCrop"
-                                            android:src="@drawable/ic_search"/>
+                                            android:src="@drawable/bg_img"/>
 
                                         <TextView
                                             android:id="@+id/tvDetail"

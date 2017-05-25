@@ -68,6 +68,8 @@ public class DashboardActivity extends Activity {
         }
     };
 
+    ArrayList<DataModel> dataModelArrayList = new ArrayList<>();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -124,6 +126,7 @@ public class DashboardActivity extends Activity {
             button5 = (Button) findViewById(R.id.button5);
             button6 = (Button) findViewById(R.id.button6);
 
+
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -144,20 +147,42 @@ public class DashboardActivity extends Activity {
 
             mAdView.loadAd(request);
 
-            String sBtn1 = "TBU.MATE USER GUIDE";
-            String sBtn2 = "HOW TO USE TBU.MATE";
-            String sBtn3 = "DOWNLOAD STATUS";
-            String sBtn4 = "PLAY YOUR CONTENT";
-            String sBtn5 = "HOW TO SAVE YOUR VIDEOS";
-            String sBtn6 = "FEATURES IN TBU.MATE";
+
+            dataModelArrayList.add(new DataModel("1","TBU.MATE USER GUIDE","Tbu.Mate empowers you to rapidly get to, inquiry, share, and download Videos. \n" +
+                    "\n" +
+                    "Since downloading dependably occurs out of sight, you can continue watching videos, surfing the Internet, tweeting, and tuning in to your music as you download.\n"));
+            dataModelArrayList.add(new DataModel("2","HOW TO USE TBU.MATE APP","Open the App and tap on menu tab, situated on the upper left corner.                        \n" +
+                    "Enter the link  or else it'll suggest you couple of sites from where you need to download videos. Include URL address.                        \n" +
+                    "Presently Browse the video you need to download and play it for some time.\n" +
+                    "Tap the green download icon and Wait for the list of video formats options to appear, then select the video quality in which you want to download the video.\n"));
+            dataModelArrayList.add(new DataModel("3","CHECK YOUR DOWNLOADS","Tap The \"Downloaded\" tab and you will find your downloaded files."));
+            dataModelArrayList.add(new DataModel("4","HOW TO PLAY YOUR DOWNLOADED CONTENT","Go to Downloaded Tab and simply tap on the content, or go to your local storage and you will find the downloaded videos.\n"));
+            dataModelArrayList.add(new DataModel("5","FIND SAVED VIDEOS.","You can easily find your saved videos by accessing your default media player."));
+            dataModelArrayList.add(new DataModel("6","TBU.MATE FEATURES","\n" +
+                    "* Fast download.\n" +
+                    "\n" +
+                    "* Multiple download resolution and format options\n" +
+                    "\n" +
+                    "* Resume downloading qucikly.\n" +
+                    "\n" +
+                    "* Convert to MP4 and Mp3 audio.\n" +
+                    "\n" +
+                    "* Easy playlists maker.\n"));
 
 
-            button1.setText(sBtn1);
-            button2.setText(sBtn2);
-            button3.setText(sBtn3);
-            button4.setText(sBtn4);
-            button5.setText(sBtn5);
-            button6.setText(sBtn6);
+            button1.setText(dataModelArrayList.get(0).title);
+            button1.setTag(dataModelArrayList.get(0).detail);
+            button2.setText(dataModelArrayList.get(1).title);
+            button2.setTag(dataModelArrayList.get(1).detail);
+            button3.setText(dataModelArrayList.get(2).title);
+            button3.setTag(dataModelArrayList.get(2).detail);
+            button4.setText(dataModelArrayList.get(3).title);
+            button4.setTag(dataModelArrayList.get(3).detail);
+            button5.setText(dataModelArrayList.get(4).title);
+            button5.setTag(dataModelArrayList.get(4).detail);
+            button6.setText(dataModelArrayList.get(5).title);
+            button6.setTag(dataModelArrayList.get(5).detail);
+
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -172,10 +197,9 @@ public class DashboardActivity extends Activity {
                 public void onClick(View view) {
 
                     Intent intent = new Intent(DashboardActivity.this,DetailActivity.class);
-                    intent.putExtra("pos","1");
-                    intent.putExtra("title",button3.getText());
-                    intent.putExtra("detail","some details 1 zzzz");
-
+                    intent.putExtra("pos",1);
+                    intent.putExtra("title",button1.getText());
+                    intent.putExtra("detail",button1.getTag().toString());
                     startActivity(intent);
                 }
             });
@@ -185,25 +209,61 @@ public class DashboardActivity extends Activity {
                 public void onClick(View view) {
 
                     Intent intent = new Intent(DashboardActivity.this,DetailActivity.class);
-                    intent.putExtra("pos","2");
+                    intent.putExtra("pos",2);
                     intent.putExtra("title",button2.getText());
-                    intent.putExtra("detail","some details 2 zzzz");
+                    intent.putExtra("detail",button2.getTag().toString());
                     startActivity(intent);
                 }
             });
+
 
             button3.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
 
                     Intent intent = new Intent(DashboardActivity.this,DetailActivity.class);
-                    intent.putExtra("pos","3");
+                    intent.putExtra("pos",3);
                     intent.putExtra("title",button3.getText());
-                    intent.putExtra("detail","some details 3 zzzz");
+                    intent.putExtra("detail",button3.getTag().toString());
                     startActivity(intent);
                 }
             });
 
+            button4.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+                    Intent intent = new Intent(DashboardActivity.this,DetailActivity.class);
+                    intent.putExtra("pos",4);
+                    intent.putExtra("title",button4.getText());
+                    intent.putExtra("detail",button4.getTag().toString());
+                    startActivity(intent);
+                }
+            });
+
+            button5.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+                    Intent intent = new Intent(DashboardActivity.this,DetailActivity.class);
+                    intent.putExtra("pos",5);
+                    intent.putExtra("title",button5.getText());
+                    intent.putExtra("detail",button5.getTag().toString());
+                    startActivity(intent);
+                }
+            });
+
+            button6.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+                    Intent intent = new Intent(DashboardActivity.this,DetailActivity.class);
+                    intent.putExtra("pos",6);
+                    intent.putExtra("title",button6.getText());
+                    intent.putExtra("detail",button6.getTag().toString());
+                    startActivity(intent);
+                }
+            });
 
         } catch (Exception e) {
             e.printStackTrace();
