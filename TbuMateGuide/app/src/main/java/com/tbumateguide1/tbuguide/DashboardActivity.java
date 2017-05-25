@@ -1,10 +1,12 @@
 package com.tbumateguide1.tbuguide;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.google.android.gms.ads.AdRequest;
@@ -22,6 +24,7 @@ import java.util.ArrayList;
 
 public class DashboardActivity extends Activity {
 
+    Button button1,button2,button3,button4,button5,button6;
     //for the start app ads
     /**
      * StartAppAd object declaration
@@ -114,6 +117,12 @@ public class DashboardActivity extends Activity {
         try {
 
             // htab_appbar = (AppBarLayout) findViewById(R.id.htab_appbar);
+            button1 = (Button) findViewById(R.id.button1);
+            button2 = (Button) findViewById(R.id.button2);
+            button3 = (Button) findViewById(R.id.button3);
+            button4 = (Button) findViewById(R.id.button4);
+            button5 = (Button) findViewById(R.id.button5);
+            button6 = (Button) findViewById(R.id.button6);
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -135,7 +144,20 @@ public class DashboardActivity extends Activity {
 
             mAdView.loadAd(request);
 
+            String sBtn1 = "TBU.MATE USER GUIDE";
+            String sBtn2 = "HOW TO USE TBU.MATE";
+            String sBtn3 = "DOWNLOAD STATUS";
+            String sBtn4 = "PLAY YOUR CONTENT";
+            String sBtn5 = "HOW TO SAVE YOUR VIDEOS";
+            String sBtn6 = "FEATURES IN TBU.MATE";
 
+
+            button1.setText(sBtn1);
+            button2.setText(sBtn2);
+            button3.setText(sBtn3);
+            button4.setText(sBtn4);
+            button5.setText(sBtn5);
+            button6.setText(sBtn6);
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -145,12 +167,42 @@ public class DashboardActivity extends Activity {
 
     private void setClickEvents() {
         try {
-          /*  rlSearch.setOnClickListener(new View.OnClickListener() {
+            button1.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
 
+                    Intent intent = new Intent(DashboardActivity.this,DetailActivity.class);
+                    intent.putExtra("pos","1");
+                    intent.putExtra("title",button3.getText());
+                    intent.putExtra("detail","some details 1 zzzz");
+
+                    startActivity(intent);
                 }
-            });*/
+            });
+
+            button2.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+                    Intent intent = new Intent(DashboardActivity.this,DetailActivity.class);
+                    intent.putExtra("pos","2");
+                    intent.putExtra("title",button2.getText());
+                    intent.putExtra("detail","some details 2 zzzz");
+                    startActivity(intent);
+                }
+            });
+
+            button3.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+                    Intent intent = new Intent(DashboardActivity.this,DetailActivity.class);
+                    intent.putExtra("pos","3");
+                    intent.putExtra("title",button3.getText());
+                    intent.putExtra("detail","some details 3 zzzz");
+                    startActivity(intent);
+                }
+            });
 
 
         } catch (Exception e) {
