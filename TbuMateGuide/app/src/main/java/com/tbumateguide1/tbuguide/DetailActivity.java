@@ -35,7 +35,7 @@ public class DetailActivity extends Activity {
     RelativeLayout rlDetail,rlToolbar,rlBack;
 
 
-    ProgressDialog progressDialog;
+    //ProgressDialog progressDialog;
    // AdView adView;
 
     @Override
@@ -52,9 +52,9 @@ public class DetailActivity extends Activity {
             rlDetail.setVisibility(View.VISIBLE);
 
 
-            progressDialog = new ProgressDialog(this);
+            /*progressDialog = new ProgressDialog(this);
             progressDialog.setMessage("Please wait for servers to load...");
-
+*/
 
             if(getIntent().getExtras().getString("title") != null)
             {
@@ -98,19 +98,19 @@ public class DetailActivity extends Activity {
                 }
             });
 
-           progressDialog.show();
+         /*  //progressDialog.show();
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
                     progressDialog.dismiss();
                     rlDetail.setVisibility(View.VISIBLE);
 
-                   /* if (mInterstitialAd.isLoaded()) {
+                   *//* if (mInterstitialAd.isLoaded()) {
                         mInterstitialAd.show();
-                    }*/
+                    }*//*
                 }
             },5000);
-
+*/
 
 
             AdView mAdView = (AdView) findViewById(R.id.adView);
